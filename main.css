@@ -112,6 +112,22 @@ body *, .userPopout-3XzG_A * {
   display: none;
 }
 
+/* Add custom title! */
+.wordmarkWindows-2dq6rw svg {
+  width: 0px;
+}
+
+.wordmarkWindows-2dq6rw::after {
+  content: '';
+  display: inline-block;
+  -webkit-mask-image: url("https://github.com/ShanersDigitalWorld/Discomods/blob/54ab94557c23f484b7658bec6ad8722451990b1e/title.svg");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  background-color: var(--highlight);
+  width: 240px !important;
+  height: 14px !important;
+}
+
 /* --== Styling the weird "Connect PlayStation Network" popout ==-- */
 .container-xB0xPf {
   background-color: var(--background);
